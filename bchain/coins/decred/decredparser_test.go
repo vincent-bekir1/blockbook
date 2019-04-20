@@ -1,6 +1,6 @@
 package dcr
 
-
+/**
 import (
 	"blockbook/bchain"
 	"blockbook/bchain/coins/btc"
@@ -425,3 +425,4 @@ func TestParseBlock(t *testing.T) {
 		}
 	}
 }
+*/
