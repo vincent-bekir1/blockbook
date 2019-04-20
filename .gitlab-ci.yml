@@ -71,6 +71,17 @@ backend-deploy-and-test-dash:
     - blockbook
   script: ./contrib/scripts/backend-deploy-and-test.sh dash
 
+backend-deploy-and-test-decred:
+  stage: backend-deploy-and-test
+  only:
+    refs:
+      - master
+    changes:
+      - configs/coins/decred.json
+  tags:
+    - blockbook
+  script: ./contrib/scripts/backend-deploy-and-test.sh decred
+
 backend-deploy-and-test-dogecoin:
   stage: backend-deploy-and-test
   only:

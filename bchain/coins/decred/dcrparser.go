@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	MainnetMagic wire.BitcoinNet = 0xc0c0c0c0
+	MainnetMagic wire.BitcoinNet = 0xd9b400f9
 )
 
 var (
@@ -20,8 +20,8 @@ var (
 func init() {
 	MainNetParams = chaincfg.MainNetParams
 	MainNetParams.Net = MainnetMagic
-	MainNetParams.PubKeyHashAddrID = [2]byte{0x07, 0x3f}
-	MainNetParams.ScriptHashAddrID = [2]byte{0x07, 0x1a}
+	MainNetParams.PubKeyHashAddrID = []byte{0x13, 0x86}
+	MainNetParams.ScriptHashAddrID = []byte{0x07, 0x1a}
 }
 
 // DecredParser handle

@@ -28,12 +28,13 @@ func NewDecredRPC(config json.RawMessage, pushHandler func(bchain.NotificationTy
 	return s, nil
 }
 
-// Initialize initializes DogecoinRPC instance.
+// Initialize initializes DecredRPC instance.
 func (b *DecredRPC) Initialize() error {
-	chainName, err := b.GetChainInfoAndInitializeMempool(b)
+	ci, err := b.GetChainInfo()
 	if err != nil {
 		return err
 	}
+	chainName := ci.Chain
 
 	glog.Info("Chain name ", chainName)
 	params := GetChainParams(chainName)
