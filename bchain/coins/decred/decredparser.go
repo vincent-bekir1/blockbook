@@ -1,4 +1,4 @@
-package dcr
+package decred
 import (
 	"blockbook/bchain"
 	"blockbook/bchain/coins/btc"
