@@ -25,7 +25,7 @@ integration-test:
     - schedules
   tags:
     - blockbook
-  script: make test-integration ARGS="-run='TestIntegration/(bcash|bgold|bitcoin|dash|dogecoin|litecoin|vertcoin|zcash)=main/'"
+  script: make test-integration ARGS="-run='TestIntegration/(bcash|bgold|bitcoin|dash|decred|dogecoin|litecoin|vertcoin|zcash)=main/'"
 
 backend-deploy-and-test-bcash:
   stage: backend-deploy-and-test
