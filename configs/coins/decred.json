@@ -35,13 +35,11 @@
     "service_additional_params_template": "",
     "protect_memory": false,
     "mainnet": true,
-    "server_config_file": "bitcoin_like.conf",
-    "client_config_file": "bitcoin_like_client.conf",
+    "server_config_file": "decred_like.conf",
+    "client_config_file": "decred_like_client.conf",
     "additional_params": {
-      "discover": 0,
-      "rpcthreads": 16,
-      "upnp": 0,
-      "whitelist": "127.0.0.1"
+      "rpcmaxclients": 16,
+      "upnp": 0
     }
   },
   "blockbook": {
