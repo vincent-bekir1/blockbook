@@ -25,7 +25,7 @@
     "version": "1.4.0",
     "binary_url": "https://github.com/decred/decred-binaries/releases/download/v1.4.0/decred-linux-amd64-v1.4.0.tar.gz",
     "verification_type": "sha256",
-    "verification_source": "https://github.com/decred/decred-binaries/releases/download/v1.4.0/manifest-v1.4.0.txt",
+    "verification_source": "36375985df1ba9a45bc11b4f6cdaed4f14ff6e5e9c46e17ef6e4f70a3349aba2",
     "extract_command": "tar -C backend --strip 1 -xf",
     "exclude_files": [
       ""
