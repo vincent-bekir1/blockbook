@@ -39,7 +39,8 @@
     "client_config_file": "decred_like_client.conf",
     "additional_params": {
       "rpcmaxclients": 16,
-      "upnp": 0
+      "upnp": 0,
+      "whitelist": "127.0.0.1"
     }
   },
   "blockbook": {
