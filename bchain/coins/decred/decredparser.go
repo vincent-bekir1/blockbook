@@ -1,4 +1,5 @@
 package decred
+
 import (
 	"blockbook/bchain"
 	"blockbook/bchain/coins/btc"
@@ -26,7 +27,8 @@ func init() {
 
 // DecredParser handle
 type DecredParser struct {
-	*btc.BitcoinParser
+	//*btc.BitcoinParser
+	*bchain.BaseParser
 }
 
 // NewDecredParser returns new DecredParser instance
