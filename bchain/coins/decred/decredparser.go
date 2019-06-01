@@ -77,6 +77,8 @@ func (p *DecredParser) ParseBlock(b []byte) (*bchain.Block, error) {
 		txs[ti] = p.TxFromMsgTx(t, false)
 	}
 
+	//rewrite parser to handle staking transactions here
+
 	return &bchain.Block{
 		BlockHeader: bchain.BlockHeader{
 			Size: len(b),
